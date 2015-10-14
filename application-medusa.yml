@@ -5,3 +5,6 @@ eureka:
       defaultZone: http://medusa:8011/eureka/,http://medusa:8012/eureka/,http://medusa:8013/eureka/
 server:
   port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
+logging:
+  file: ${spring.application.name}.log
+#  file: ${java.io.tmpdir}/${spring.application.name}.log
