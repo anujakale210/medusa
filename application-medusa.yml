@@ -7,5 +7,5 @@ server:
   port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
 logging:
   file: ${java.io.tmpdir}/${spring.application.name}.log
-  config: c:/acx/log4j.properties
+  config: file:c:/acx/log4j.properties
 #  file: ${java.io.tmpdir}/${spring.application.name}.log
