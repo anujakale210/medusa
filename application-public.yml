@@ -2,7 +2,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://10.1.194.108:8011/eureka/,http://10.1.194.108:8012/eureka/,http://10.1.194.108:8013/eureka/
+      defaultZone: http://win-disgu1v7isr:8011/eureka/,http://win-disgu1v7isr:8012/eureka/,http://win-disgu1v7isr:8013/eureka/
 server:
   port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
 logging:
