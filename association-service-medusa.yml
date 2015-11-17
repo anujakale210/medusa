@@ -2,7 +2,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://medusa:8011/eureka/,http://medusa:8012/eureka/,http://medusa:8013/eureka/
+      defaultZone: http://10.1.134.18:8011/eureka/,http://10.1.134.18:8012/eureka/,http://10.1.134.18:8013/eureka/
 server:
   port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
 # Rabbit
@@ -10,16 +10,16 @@ association:
   message: 
     broker: 
       port: 5673
-      hostname: medusa
+      hostname: 10.1.134.18
       type: rabbitmq
       options: ?exchangeType=topic
       exchange: 
         name: AssociationEvents
-      uri: rabbitmq://medusa:5673/AssociationEvents?exchangeType=topic
+      uri: rabbitmq://10.1.134.18:5673/AssociationEvents?exchangeType=topic
 
 # Event routing
   service: 
     internal: 
       endpoint: vm:associationEventQueue
     external: 
-      topic: rabbitmq://medusa:5673/AssociationEvents?exchangeType=topic
+      topic: rabbitmq://10.1.134.18:5673/AssociationEvents?exchangeType=topic
