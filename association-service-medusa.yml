@@ -15,11 +15,11 @@ association:
       options: ?exchangeType=topic
       exchange: 
         name: AssociationEvents
-      uri: ${association.message.broker.type}://${association.message.broker.hostname}:${association.message.broker.port}/${association.message.broker.exchange.name}${association.message.broker.options}
+      uri: rabbitmq://medusa:5673/AssociationEvents?exchangeType=topic
 
 # Event routing
   service: 
     internal: 
       endpoint: vm:associationEventQueue
     external: 
-      topic: ${association.message.broker.uri}
+      topic: rabbitmq://medusa:5673/AssociationEvents?exchangeType=topic
