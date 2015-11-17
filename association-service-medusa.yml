@@ -9,14 +9,17 @@ server:
 association: 
   message: 
     broker: 
-      port = 5673
-      hostname = 10.1.134.18
-      type = rabbitmq
-      options = ?exchangeType=topic
+      port: 5673
+      hostname: medusa
+      type: rabbitmq
+      options: ?exchangeType=topic
       exchange: 
-        name = AssociationEvents
-      uri = ${association.message.broker.type}://${association.message.broker.hostname}:${association.message.broker.port}/${association.message.broker.exchange.name}${association.message.broker.options}
+        name: AssociationEvents
+      uri: ${association.message.broker.type}://${association.message.broker.hostname}:${association.message.broker.port}/${association.message.broker.exchange.name}${association.message.broker.options}
 
 # Event routing
-association.service.internal.endpoint = vm:associationEventQueue
-association.service.external.topic = ${association.message.broker.uri}
+  service: 
+    internal: 
+      endpoint: vm:associationEventQueue
+    external: 
+      topic: ${association.message.broker.uri}
