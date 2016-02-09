@@ -8,4 +8,4 @@ fitbit:
   apiKey=2c1660cc569340b3c0d5997b21b2315b
   redirectUri=http://medusa:51602/oauth/authentication/Callback
   scope=heartrate profile social location sleep settings weight activity nutrition
-  grantType=heartrate profile social location sleep settings weight activity nutrition
+  grantType=authorization_code
