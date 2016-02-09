@@ -1,3 +1,11 @@
 ---
 server:
   port: 51602
+fitbit:
+  clientId=22B3MV
+  tokenServerUrl=https://api.fitbit.com/oauth2/token 
+  apiSecret=7c4be4b7b01ac92ff83e6fc3e03f064d
+  apiKey=2c1660cc569340b3c0d5997b21b2315b
+  redirectUri=http://medusa:51602/oauth/authentication/Callback
+  scope=heartrate profile social location sleep settings weight activity nutrition
+  grantType=heartrate profile social location sleep settings weight activity nutrition
