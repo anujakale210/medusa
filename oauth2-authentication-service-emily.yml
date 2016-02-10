@@ -6,7 +6,7 @@ fitbit:
   tokenServerUrl: https://api.fitbit.com/oauth2/token 
   apiSecret: e04494793ae27e8e9834cf552f5536c3
   apiKey: 58f23096df4c82b7b8e1b30734ec8b21
-  redirectUri: http://medusa:51603/v1/oauth2/authentication/Callback
+  redirectUri: 	fitforward://callback
   scope: activity
   grantType: authorization_code
 spring:
