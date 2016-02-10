@@ -2,13 +2,13 @@
 server:
   port: 51603
 fitbit:
-  clientId=227F6C
-  tokenServerUrl=https://api.fitbit.com/oauth2/token 
-  apiSecret=e04494793ae27e8e9834cf552f5536c3
-  apiKey=58f23096df4c82b7b8e1b30734ec8b21
-  redirectUri=http://medusa:51603/v1/oauth2/authentication/Callback
-  scope=activity
-  grantType=authorization_code
+  clientId:227F6C
+  tokenServerUrl:https://api.fitbit.com/oauth2/token 
+  apiSecret:e04494793ae27e8e9834cf552f5536c3
+  apiKey:58f23096df4c82b7b8e1b30734ec8b21
+  redirectUr:http://medusa:51603/v1/oauth2/authentication/Callback
+  scope:activity
+  grantType:authorization_code
 spring:
   datasource:
     url:jdbc:sqlserver://medusa:1433;databaseName=authenticationserviceemily
