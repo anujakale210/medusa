@@ -9,6 +9,11 @@ fitbit:
   redirectUri: fitforward://callback
   scope: heartrate profile social location sleep settings weight activity nutrition
   grantType: authorization_code
+withings:
+  comsumerKey: 46d4f538e904cc50137e2175f78dfe7b01fb9de838942fbbcf32ce20f3f2ff
+  consumerSecret: 54947d2f192627effd65de22270d0e7d0f105071fee3e271e24d5c5d8fe
+  signatureMethod: HMAC-SHA1
+  version: 1.0
 spring:
   datasource:
     url: jdbc:sqlserver://medusa:1433;databaseName=authenticationserviceemily
