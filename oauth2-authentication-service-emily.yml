@@ -14,6 +14,7 @@ withings:
   consumerSecret: 54947d2f192627effd65de22270d0e7d0f105071fee3e271e24d5c5d8fe
   signatureMethod: HMAC-SHA1
   version: 1.0
+  callbackUrl: http://10.1.64.157
 spring:
   datasource:
     url: jdbc:sqlserver://medusa:1433;databaseName=authenticationserviceemily
