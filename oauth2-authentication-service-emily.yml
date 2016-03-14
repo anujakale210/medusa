@@ -10,8 +10,8 @@ fitbit:
   scope: heartrate profile social location sleep settings weight activity nutrition
   grantType: authorization_code
 withings:
-  consumerKey: 46d4f538e904cc50137e2175f78dfe7b01fb9de838942fbbcf32ce20f3f2ff
-  consumerSecret: 54947d2f192627effd65de22270d0e7d0f105071fee3e271e24d5c5d8fe
+  consumerKey: 792e1872eb9bf99bffb4743edbb27f522bff3f24e28c090591335545c050b
+  consumerSecret: 8c1c453d8bb190b80108bb16d70272088123516005602b78879f2bc839f87
   signatureMethod: HMAC-SHA1
   version: 1.0
   callbackUrl: http://10.1.64.157
