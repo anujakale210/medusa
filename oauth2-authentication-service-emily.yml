@@ -18,6 +18,7 @@ withings:
   dataCallback: http://12.181.24.119:51603/v1/withings/data/Callback
   comment: NantHealthDeviceConX
   subscribeUrl: https://wbsapi.withings.net/notify?action=subscribe
+  activityUrl: https://wbsapi.withings.net/v2/measure
 spring:
   datasource:
     url: jdbc:sqlserver://medusa:1433;databaseName=authenticationserviceemily
