@@ -16,6 +16,7 @@ withings:
   version: 1.0
   callbackUrl: http://10.1.64.157
   dataCallback: http://12.181.24.119:51603/v1/withings/data/Callback
+  comment: NantHealth DeviceConX
 spring:
   datasource:
     url: jdbc:sqlserver://medusa:1433;databaseName=authenticationserviceemily
