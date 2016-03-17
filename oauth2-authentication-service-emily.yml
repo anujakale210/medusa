@@ -14,7 +14,7 @@ withings:
   consumerSecret: 8c1c453d8bb190b80108bb16d70272088123516005602b78879f2bc839f87
   signatureMethod: HMAC-SHA1
   version: 1.0
-  callbackUrl: http://12.181.24.119:12345/v1/oath1/authentication/Callback/
+  callbackUrl: http://12.181.24.119:12345/v1/oauth1/authentication/Callback/
   dataCallback: http://12.181.24.119:12345/v1/withings/data/
   comment: NantHealthDeviceConX
   subscribeUrl: https://wbsapi.withings.net/notify?action=subscribe
