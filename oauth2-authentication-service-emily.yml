@@ -15,7 +15,7 @@ withings:
   signatureMethod: HMAC-SHA1
   version: 1.0
   callbackUrl: http://10.1.64.157
-  dataCallback: http://12.181.24.119:12345/v1/withings/data/Callback
+  dataCallback: http://12.181.24.119:12345/v1/withings/data/
   comment: NantHealthDeviceConX
   subscribeUrl: https://wbsapi.withings.net/notify?action=subscribe
   activityUrl: https://wbsapi.withings.net/v2/measure
