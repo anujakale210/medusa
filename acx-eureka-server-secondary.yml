@@ -1,0 +1,10 @@
+server:
+  port: 8012  
+eureka:
+  instance:
+    hostname: eurekasecondary
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8013/eureka/,http://localhost:8011/eureka/
