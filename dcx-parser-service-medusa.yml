@@ -1,0 +1,6 @@
+acx:
+  dcx:
+    publisher:
+      serviceEndpoint: "mina2:tcp://medusa:9998"
+      dataEndpoint: "netty4:tcp://medusa:9996"
+      deviceEndpoint: "netty4:tcp://medusa:9996/devices/{id}"
