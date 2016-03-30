@@ -9,5 +9,5 @@ fitbit:
   scope: heartrate profile social location sleep settings weight activity nutrition
   grantType: authorization_code
   codeUrl: http://medusa:51603/v1/oauth2/authentication/code/
-  stateUrl:: http://medusa:51603/v1/oauth2/authentication/state/
+  stateUrl: http://medusa:51603/v1/oauth2/authentication/state/
   refreshTokenUrl: http://medusa:51603/v1/oauth2/authentication/refreshToken/
