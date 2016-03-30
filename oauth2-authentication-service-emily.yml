@@ -1,6 +1,6 @@
 ---
 server:
-  port: 12345
+  port: 51603
 fitbit:
   clientId: 227F6C
   tokenServerUrl: https://api.fitbit.com/oauth2/token 
