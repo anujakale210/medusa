@@ -1,0 +1,31 @@
+---
+server:
+  port: 51603
+fitbit:
+  clientId: 227F6C
+  tokenServerUrl: https://api.fitbit.com/oauth2/token 
+  apiSecret: e04494793ae27e8e9834cf552f5536c3
+  apiKey: 58f23096df4c82b7b8e1b30734ec8b21
+  redirectUri: http://medusa:51603/v1/oauth2/authentication/Callback
+  scope: heartrate profile social location sleep settings weight activity nutrition
+  grantType: authorization_code
+withings:
+  consumerKey: 792e1872eb9bf99bffb4743edbb27f522bff3f24e28c090591335545c050b
+  consumerSecret: 8c1c453d8bb190b80108bb16d70272088123516005602b78879f2bc839f87
+  signatureMethod: HMAC-SHA1
+  version: 1.0
+  callbackUrl: http://12.181.24.119:12345/v1/oauth1/authentication/Callback/
+  dataCallback: http://12.181.24.119:12345/v1/withings/data/
+  comment: NantHealthDeviceConX
+  subscribeUrl: https://wbsapi.withings.net/notify?action=subscribe
+  activityUrl: https://wbsapi.withings.net/v2/measure
+spring:
+  datasource:
+    url: jdbc:sqlserver://medusa:1433;databaseName=authenticationserviceemily
+    username: sa
+    password: n0ne@H0me
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
