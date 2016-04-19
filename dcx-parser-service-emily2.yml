@@ -1,0 +1,9 @@
+---
+acx:
+  dcx:
+    publisher:
+      serviceEndpoint: "mina2:tcp://192.168.20.33:9998"
+      dataEndpoint: "netty4:tcp://192.168.20.33:9996"
+      deviceEndpoint: "netty4:tcp://192.168.20.33:9996/devices/{id}"
+server:
+  port: 52308
