@@ -12,7 +12,8 @@ fitbit:
   grantType: authorization_code
 spring:
   datasource:
-    url: jdbc:sqlserver://medusa:1433;databaseName=fitbitservice
+    eventualUrl: jdbc:sqlserver://medusa:1433;databaseName=fitbitservice
+    url: jdbc:sqlserver://medusa:1433;databaseName=authenticationserviceemily
     username: sa
     password: n0ne@H0me
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
