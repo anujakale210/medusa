@@ -7,13 +7,13 @@ fitbit:
   apiSecret: e04494793ae27e8e9834cf552f5536c3
   apiKey: 58f23096df4c82b7b8e1b30734ec8b21
   redirectUri: fitforward://callback
-  raymondredirectUri: http://medusa:51115/v1/oauth2/authentication/Callback
+  raymondredirectUri: http://10.1.134.18:51115/v1/oauth2/authentication/Callback
   scope: heartrate profile social location sleep settings weight activity nutrition
   grantType: authorization_code
 spring:
   datasource:
-    eventualUrl: jdbc:sqlserver://medusa:1433;databaseName=fitbitservice
-    url: jdbc:sqlserver://medusa:1433;databaseName=authenticationserviceemily
+    eventualUrl: jdbc:sqlserver://10.1.134.18:1433;databaseName=fitbitservice
+    url: jdbc:sqlserver://10.1.134.18:1433;databaseName=authenticationserviceemily
     username: sa
     password: n0ne@H0me
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
