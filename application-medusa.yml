@@ -2,7 +2,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://medusa:8011/eureka/,http://medusa:8012/eureka/,http://medusa:8013/eureka/
+      defaultZone: http://10.1.134.18:8011/eureka/,http://10.1.134.18:8012/eureka/,http://10.1.134.18:8013/eureka/
 server:
   port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
 logging:
