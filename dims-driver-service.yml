@@ -1,4 +1,6 @@
 ---
+server:
+  port: 51101
 spring:
   data:
     mongodb:
