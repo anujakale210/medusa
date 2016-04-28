@@ -1,1 +1,18 @@
-
+---
+spring:
+  data:
+    mongodb:
+      host:10.1.136.21
+      port: 27017
+  rabbitmq:
+    host: 10.1.136.21
+    port: 6672
+    username: guest
+    password: guest
+driver:
+  message:
+    broker:
+      publisher:
+        exchange:
+          name: DriverEvents
+      
