@@ -4,15 +4,23 @@ spring:
     mongodb:
       host:10.1.136.21
       port: 27017
-  rabbitmq:
-    host: 10.1.136.21
-    port: 6672
-    username: guest
-    password: guest
+
+#rabbit
 driver:
+  event:
+    producer:
+      topic: ${driver.message.broker.type}://${driver.message.broker.hostname}:${driver.message.broker.port}/${driver.message.broker.producer.exchange.name}${driver.message.broker.producer.options}
   message:
-    broker:
-      publisher:
+    broker: 
+      port: 5672
+      hostname: 10.1.136.21
+      type: rabbitmq
+      producer: 
+        options: ?exchangeType=fanout&durable=true&username=${rabbitmq.username}&password=${rabbitmq.password}
         exchange:
-          name: DriverEvents
+          name: driverEvents
+rabbitmq:
+  username: guest
+  password: guest
+
       
