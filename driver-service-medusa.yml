@@ -4,7 +4,6 @@ spring:
     mongodb:
       host:10.1.136.21
       port: 27017
-
 #rabbit
 driver:
   event:
