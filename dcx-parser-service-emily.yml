@@ -2,14 +2,14 @@
 acx:
   dcx:
     publisher:
-      serviceEndpoint: "mina2:tcp://192.168.20.33:9998"
-      dataEndpoint: "netty4:tcp://192.168.20.33:9996"
-      deviceEndpoint: "netty4:tcp://192.168.20.33:9996/devices/{id}"
-      mserviceEndpoint: "mina2:tcp://10.1.194.108:9998"
-      mdataEndpoint: "netty4:tcp://10.1.194.108:9996"
-      mdeviceEndpoint: "netty4:tcp://10.1.194.108:9996/devices/{id}"
-      rserviceEndpoint: "mina2:tcp://10.1.64.188:9998"
-      rdataEndpoint: "netty4:tcp://10.1.64.188:9996"
-      rdeviceEndpoint: "netty4:tcp://10.1.64.188:9996/devices/{id}"
+      serviceEndpoint: "mina2:tcp://10.1.134.18:9998"
+      dataEndpoint: "netty4:tcp://10.1.134.18:9996"
+      deviceEndpoint: "netty4:tcp://10.1.134.18:9996/devices/{id}"
 server:
   port: 52308
+eserviceEndpoint: "mina2:tcp://192.168.20.33:9998"
+edataEndpoint: "netty4:tcp://192.168.20.33:9996"
+edeviceEndpoint: "netty4:tcp://192.168.20.33:9996/devices/{id}"
+mserviceEndpoint: "mina2:tcp://10.1.194.108:9998"
+mdataEndpoint: "netty4:tcp://10.1.194.108:9996"
+mdeviceEndpoint: "netty4:tcp://10.1.194.108:9996/devices/{id}"
