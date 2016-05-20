@@ -3,7 +3,7 @@ server:
   port: 51006
 spring:
   data:
-    mongod:
+    mongodb:
       host: 10.1.136.255
       port: 27017
   datasource:
