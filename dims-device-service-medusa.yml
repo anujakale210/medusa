@@ -21,6 +21,7 @@ device:
       type: rabbitmq
       port: 5672
       hostname: localhost
+      vpnhostname: 10.0.0.152
       producer:
         options: ?exchangeType=fanout&durable&username=${rabbitmq.username}&password=${rabbitmq.password}
         exchange:
