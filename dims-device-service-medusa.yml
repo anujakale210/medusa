@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      host: 10.1.136.18
+      host: 10.1.134.18
       port: 27017
   datasource:
     url: jdbc:sqlserver://10.1.134.18:1433;databaseName=dimsdeviceservice
