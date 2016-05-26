@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    includes: medusa
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=dimsdeviceservice
+    password: I$irona123
+device:
+  message:
+    broker:
+      hostname: localhost
