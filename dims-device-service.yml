@@ -1,6 +1,8 @@
+---
 server:
   port: 51006
 spring:
+  profiles: medusa
   data:
     mongodb:
       host: 10.1.134.18
@@ -31,3 +33,16 @@ device:
 rabbitmq:
   username: guest
   password: guest
+
+---
+
+spring:
+  profiles: ben
+    includes: medusa
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=dimsdeviceservice
+    password: I$irona123
+device:
+  message:
+    broker:
+      hostname: localhost
