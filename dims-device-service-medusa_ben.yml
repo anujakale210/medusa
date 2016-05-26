@@ -1,7 +1,7 @@
 spring:
   profiles:
     include: medusa
-    active: medusa_ben,medusa
+    active: medusa,medusa_ben
   datasource:
     url: jdbc:sqlserver://localhost:1433;databaseName=dimsdeviceservice
     password: I$irona123
