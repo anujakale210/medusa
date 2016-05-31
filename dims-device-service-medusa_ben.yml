@@ -6,7 +6,7 @@ spring:
     password: I$irona123
   jpa:
     database: sql-server
-    show-sql: true
+    show-sql: false
 device:
   message:
     broker:
