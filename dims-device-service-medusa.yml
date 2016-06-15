@@ -32,17 +32,3 @@ device:
 rabbitmq:
   username: guest
   password: guest
----
-spring:
-  profiles: ben
-    include: medusa
-  datasource:
-    url: jdbc:sqlserver://localhost:1433;databaseName=deviceservice
-    password: I$irona123
-  jpa:
-    database: sql-server
-    show-sql: false
-device:
-  message:
-    broker:
-      hostname: localhost
