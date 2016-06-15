@@ -1,6 +1,6 @@
 ---
 spring:
-  profiles: ben
+  profiles: 
     include: medusa
   datasource:
     url: jdbc:sqlserver://localhost:1433;databaseName=driverservice
