@@ -1,0 +1,48 @@
+---
+server:
+  port: 51006
+spring:
+  data:
+    mongodb:
+      host: 10.1.134.18
+      port: 27017
+  datasource:
+    url: jdbc:sqlserver://10.1.134.18:1433;databaseName=driverservice
+    username: sa
+    password: n0ne@H0me
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+device:
+  message:
+    broker:
+      type: rabbitmq
+      port: 5672
+      hostname: rabbitmq
+      vpnhostname: 10.0.0.152
+      producer:
+        options: ?exchangeType=fanout&durable&username=${rabbitmq.username}&password=${rabbitmq.password}
+        exchange:
+          name: deviceEvents
+  event:
+    producer:
+      topic: ${device.message.broker.type}://${device.message.broker.hostname}:${device.message.broker.port}/${device.message.broker.producer.exchange.name}${device.message.broker.producer.options}
+rabbitmq:
+  username: guest
+  password: guest
+---
+spring:
+  profiles: ben
+    include: medusa
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=driverservice
+    password: I$irona123
+  jpa:
+    database: sql-server
+    show-sql: false
+device:
+  message:
+    broker:
+      hostname: localhost
