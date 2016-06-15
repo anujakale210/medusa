@@ -37,7 +37,7 @@ spring:
   profiles: ben
     include: medusa
   datasource:
-    url: jdbc:sqlserver://localhost:1433;databaseName=driverservice
+    url: jdbc:sqlserver://localhost:1433;databaseName=deviceservice
     password: I$irona123
   jpa:
     database: sql-server
