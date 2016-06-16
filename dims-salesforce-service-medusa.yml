@@ -1,3 +1,8 @@
 ---
 server:
   port: 18103
+salesforce:
+  redirectUri: https://localhost:18103/api/v1/connection/Callback
+  clientId: 3MVG9uudbyLbNPZOJq_w6ip7sTGbpSgz1jq65KM0u0b_yHnvAsAMH5pW9eiKhsezsq0ZMPQ7AfGstimlnIFJU
+  clientSecret: 8098325293928706246
+  baseUri: https://login.salesforce.com
